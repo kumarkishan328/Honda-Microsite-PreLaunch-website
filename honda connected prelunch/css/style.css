@@ -1,0 +1,33 @@
+img {max-width:100%;}
+.container {max-width:990px; background:url(../images/bg_header.png) no-repeat center top #fff;}
+.logo {margin:2em 0 0 2em;}
+.social {margin:2em 2em 0 0em; float:left;}
+.social li {display:inline-block;} 
+.bottom_sec {background:url(../images/form_bg.jpg) no-repeat center top #e6e7e8; padding:2em 0; max-width:960px; margin:auto; background-size:cover; }
+
+.form_be_the {padding:em 0; background:rl(../images/bg_be_the_right.png) no-repeat top right #cccccc  }
+.be_the {float: left; margin: 3em; width: 42%; }
+
+.form_out {margin:0px; padding:1em 2em; background: #ccc none repeat scroll 0 0;}
+.form_out li {list-style:none; display:block; margin:0.5em 0;}
+.bg_form {background:url(../images/form_right.jpg) no-repeat right top #fff;border: none;margin: 0px;border-radius: 0px !important;}
+
+.sub { margin:-0.5em 2em -1em 0 }
+.odometer {margin:4em 2em 2em 0;}
+.live {margin:0 0 2em 0;}
+.time_bg {width:383px; height:231px; background:#000; margin:110px 0 52px 0;}
+.header_img {margin:110px 0 12px 0;}
+.live_img{margin:30px 0 0 42px; padding: 58px 0 0;} 
+.timer {margin: 5px 0 45px 90px;  padding: 14px 0 0;}
+#countdown_label{font-size: 10px;color: #FFF;}
+#countdown_label span{width:45px;display: inline-block;text-align: center}
+.full-right {float:right;}
+.chat {float:right;}
+.form_out_chat {background:#e2e2e2; margin:0px; padding:1em 2em 4em 2em;}
+.form_out_chat li {list-style:none; display:block; margin:0.5em 0;}
+.chat { background: #b7b7b7 none repeat scroll 0 0;  float: left;margin: 41px 0 0 -8px; padding: 0; width: 47%;}
+iframe  {border:0; overflow-x: hidden;}
+
+
+
+

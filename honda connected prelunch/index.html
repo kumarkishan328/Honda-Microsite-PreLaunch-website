@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Honda</title>
+        <link rel="stylesheet" href="css/jquery.countdown.css" />
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+    </head>
+
+    <body>
+        <div class="container">
+            <ul class="pull-right social">Get Social
+                <li><a href="#" target="_blank"><img src="images/fb.png"></a></li>
+                <li><a href="#" target="_blank"><img src="images/tw.png"></a></li>
+                <li><a href="#" target="_blank"><img src="images/cemara.png"></a></li>
+                <li><a href="#" target="_blank"><img src="images/viedo.png"></a></li>
+            </ul>
+            <div class="logo">
+                <div class="row">
+                    <a href="#"><img src="images/honda_logo.png"></a></div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- <div class="odometer pull-right">3252</div> -->
+            <div class="clearfix"></div>
+
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="header_img"> <img src="images/a_tech.png"></div>
+                    <p>Honda is bringing to you an advanced and exciting information service platform to make your life safer and more convenient with Honda Connect. Tune in for the live webcast with Bunny Punia, Associate Editor, Gaadi.com as we bring you tomorrow’s technology today.</p>
+                </div>
+            </div>
+            <div class="col-sm-5 full-right" > 
+                <div class="time_bg">
+                    <div class="live_img"><img src="images/live.png"></div>
+                    <div class="timer">
+                        <!-- <img src="images/timer.png"> -->
+                        <div id="countdown"></div>
+                        <div id="countdown_label">
+                            <span>Days</span>
+                            <span>Hour</span>
+                            <span>Min</span>
+                            <span>Sec</span>
+                        </div>
+                    </div>
+                    <img src="images/shodow.png">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="bottom_sec full-left">
+            <div class="form_be_the">
+                <div class="be_the"><img src="images/be_the.png">
+                    <ul class="form_out">
+                        <li>
+                            <input type="text" class="form-control bg_form" placeholder="Name">
+                        </li>
+                        <li>
+                            <input type="email" class="form-control bg_form" placeholder="Email">
+                        </li>
+                        <li>
+                            <input type="mobile" class="form-control bg_form" placeholder="Mobile">
+                        </li>
+                        <li>
+                            <select class="form-control bg_form">
+                                <option value="">City</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </li>
+                       
+
+                    </ul>
+                    <div class="sub pull-right"><input id="submitticket" type="image" src="images/submit.png" class="submit" value="Submit"></div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="chat">
+              		 <iframe src="http://www.24framesdigital.com/honda/webcast/151215/chat.html" width="100%"  height="247"></iframe> 
+                
+                 </div> 
+                 <div class="clearfix"></div>
+                </div>
+            </div>
+         
+        </div>
+
+    </div>
+
+<script>
+        $(function(){
+	
+		var note = $('#note'),
+			ts = new Date(2015, 11, 16,12,0,0),
+			newYear = true;
+		
+		if((new Date()) > ts){
+			// The new year is here! Count towards something else.
+			// Notice the *1000 at the end - time must be in milliseconds
+			ts = (new Date()).getTime() + 10*24*60*60*1000;
+			newYear = false;
+		}
+			
+		$('#countdown').countdown({
+			timestamp	: ts
+		});
+		
+	});        
+</script>
+
+</body>
+</html>
